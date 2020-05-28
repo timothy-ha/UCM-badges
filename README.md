@@ -4,7 +4,7 @@ A quick way to find which badges a course satisfies.
 
 ## Example
 ```console
-timothy@Liszt:/mnt/c/GitHub/UCM-badges$ ./badges.out 
+foo@bar:~$ ./badges.out 
 Usage: deptName XXX
 Example: CSE 021
 
