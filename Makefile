@@ -4,7 +4,7 @@ all: badges
 
 clean:
 	clear
-	-rm -f -r badges.out badges.dSYM
+	-rm -f -r badges.out
 
 badges: badges.cpp
 	clear
