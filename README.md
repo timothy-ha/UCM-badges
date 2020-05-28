@@ -2,34 +2,57 @@
 
 A quick way to find which badges a course satisfies.
 
-## Example
+## Examples
 ```console
 foo@bar:~$ ./badges.out 
-Usage: deptName XXX
-Example: CSE 021
+Enter Course: math-32
 
-Enter Course: MATH 032
-
-Badges:
-Scientific Method
-Quantitative and Numerical Analysis
-Practical and Applied Knowledge
-
-Enter Course: CSE 021
-
-Badges:
-Practical and Applied Knowledge
-
-Enter Course: MATH 131
+MATH 032
 
 Badges:
 Scientific Method
 Quantitative and Numerical Analysis
 Practical and Applied Knowledge
 
-Enter Course: ENGR 197
+General Ed:
+```
+```console
+foo@bar:~$ ./badges.out 
+Enter Course: math32
+
+MATH 032
 
 Badges:
+Scientific Method
+Quantitative and Numerical Analysis
+Practical and Applied Knowledge
+
+General Ed:
+```
+```console
+foo@bar:~$ ./badges.out 
+Enter Course: math131
+
+MATH 131
+
+Badges:
+Scientific Method
+Quantitative and Numerical Analysis
+Practical and Applied Knowledge
+
+General Ed:
+Crossroads Course
+```
+```console
+foo@bar:~$ ./badges.out 
+Enter Course: cse5
+
+CSE 005
+
+Badges:
+Literary and Textual Analysis
 Practical and Applied Knowledge
 Ethics
+
+General Ed:
 ```
