@@ -44,16 +44,19 @@ int main() {
 
 	string course;	
 	top:
-	cout << "\nEnter Course: ";
+	cout << "\n\nEnter Course: ";
 	getline(cin, course);
 	
+	if (!isspace(course[3]) && !isalpha(course[3]) && course[3] != '-') course.insert(3, " ");
+	else if (!isspace(course[4]) && !isalpha(course[4]) && course[4] != '-') course.insert(4, " ");
 	for (int i = 0; i < course.length(); i++) {
 		if (course[i] >= 'a' && course[i] <= 'z') course[i] -= 32; // convert to uppercase
 		if (course[i] == '-') course[i] = ' '; // convert dash to space
 		if (course[i] == ' ' && (course.length() - i) == 3) course.insert(i + 1, "0");
 		if (course[i] == ' ' && (course.length() - i) == 2) course.insert(i + 1, "00");
 	}
-
+	
+	cout << '\n' << course << '\n';
 	cout << "\nBadges:\n";
 	if (find(media, course)) cout << "Media and Visual Analysis\n";
 	if (find(sciMethod, course)) cout << "Scientific Method\n";
