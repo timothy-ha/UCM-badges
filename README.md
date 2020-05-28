@@ -17,6 +17,7 @@ Practical and Applied Knowledge
 General Ed:
 ```
 ```console
+foo@bar:~$ ./badges.out 
 Enter Course: math32
 
 MATH 032
@@ -29,6 +30,7 @@ Practical and Applied Knowledge
 General Ed:
 ```
 ```console
+foo@bar:~$ ./badges.out 
 Enter Course: math131
 
 MATH 131
@@ -42,6 +44,7 @@ General Ed:
 Crossroads Course
 ```
 ```console
+foo@bar:~$ ./badges.out 
 Enter Course: cse5
 
 CSE 005
