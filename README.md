@@ -3,7 +3,7 @@
 A quick way to find which badges a course satisfies.
 
 ## Example
-```bash
+```shell
 timothy@Liszt:/mnt/c/GitHub/UCM-badges$ ./badges.out 
 Usage: deptName XXX
 Example: CSE 021
