@@ -1,6 +1,6 @@
 # UCM-badges
 
-A quick way to find which badges a course satisfies.
+A quick way to find which badges or gen ed requirement a course satisfies.
 
 ## Examples
 ```console
