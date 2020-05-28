@@ -2,7 +2,7 @@
 
 A quick way to find which badges a course satisfies.
 
-## Example
+## Examples
 ```console
 foo@bar:~$ ./badges.out 
 Enter Course: math-32
@@ -15,8 +15,8 @@ Quantitative and Numerical Analysis
 Practical and Applied Knowledge
 
 General Ed:
-
-
+```
+```console
 Enter Course: math32
 
 MATH 032
@@ -27,8 +27,8 @@ Quantitative and Numerical Analysis
 Practical and Applied Knowledge
 
 General Ed:
-
-
+```
+```console
 Enter Course: math131
 
 MATH 131
@@ -40,8 +40,8 @@ Practical and Applied Knowledge
 
 General Ed:
 Crossroads Course
-
-
+```
+```console
 Enter Course: cse5
 
 CSE 005
