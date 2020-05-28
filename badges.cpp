@@ -92,11 +92,15 @@ int main() {
 	} */
 	string course;
 	
-	cout << "Enter the course to list badges covered: ";
+	cout << "Usage: deptName XXX\n";
+	cout << "Example: CSE 021\n\n";
+	cout << "Enter Course: ";
 	//cin >> course;
 	getline(cin, course);
 	cout << '\n';
-	
+
+
+	cout << "Badges:\n";
 	if (find(media, course)) cout << "Media and Visual Analysis\n";
 	if (find(sciMethod, course)) cout << "Scientific Method\n";
 	if (find(literary, course)) cout << "Literary and Textual Analysis\n";
