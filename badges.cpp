@@ -23,7 +23,7 @@ bool find(vector<string> badge, string course) {
 }
  
 int main() {
-	vector<string> media, sciMethod, literary, quant, societies, diversity, awareness, sustainability, appKnowledge, ethics, leadership;
+	vector<string> media, sciMethod, literary, quant, societies, diversity, awareness, sustainability, appKnowledge, ethics, leadership, crossroads, culminating, writing;
 	// int input;
 	// loads badges into vectors
 	read("badges/media-and-visual-analysis", media);
@@ -38,6 +38,10 @@ int main() {
 	read("badges/ethics", ethics);
 	read("badges/leadership-community-and-engaging-world", leadership);
 
+	read("general-ed/crossroads", crossroads);
+	read("general-ed/culminating", culminating);
+	read("general-ed/writing", writing);
+
 	string course;	
 	cout << "Usage: deptName XXX\n";
 	cout << "Example: CSE 021\n";
@@ -45,9 +49,13 @@ int main() {
 	top:
 	cout << "\nEnter Course: ";
 	getline(cin, course);
-	cout << '\n';
+	
+	for (int i = 0; i < course.length(); i++) {
+		if (course[i] >= 'a' && course[i] <= 'z') course[i] -= 32; // convert to uppercase
+		if (course[i] == '-') course[i] = ' '; // convert dash to space
+	}
 
-	cout << "Badges:\n";
+	cout << "\nBadges:\n";
 	if (find(media, course)) cout << "Media and Visual Analysis\n";
 	if (find(sciMethod, course)) cout << "Scientific Method\n";
 	if (find(literary, course)) cout << "Literary and Textual Analysis\n";
@@ -59,6 +67,11 @@ int main() {
 	if (find(appKnowledge, course)) cout << "Practical and Applied Knowledge\n";
 	if (find(ethics, course)) cout << "Ethics\n";
 	if (find(leadership, course)) cout << "Leadership, Community, and Engaging the World\n";
+
+	cout << "\nGeneral Ed:\n";
+	if (find(crossroads, course)) cout << "Crossroads Course\n";
+	if (find(writing, course)) cout << "Writing in the Discipline\n";
+	if (find(culminating, course)) cout << "Culminating Experience\n";
 
 	goto top;
 }
