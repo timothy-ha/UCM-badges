@@ -91,14 +91,15 @@ int main() {
 			cout << "Invalid input.";
 	} */
 	string course;
+
 	
 	cout << "Usage: deptName XXX\n";
-	cout << "Example: CSE 021\n\n";
-	cout << "Enter Course: ";
-	//cin >> course;
+	cout << "Example: CSE 021\n";
+
+	top:
+	cout << "\nEnter Course: ";
 	getline(cin, course);
 	cout << '\n';
-
 
 	cout << "Badges:\n";
 	if (find(media, course)) cout << "Media and Visual Analysis\n";
@@ -112,4 +113,6 @@ int main() {
 	if (find(appKnowledge, course)) cout << "Practical and Applied Knowledge\n";
 	if (find(ethics, course)) cout << "Ethics\n";
 	if (find(leadership, course)) cout << "Leadership, Community, and Engaging the World\n";
+
+	goto top;
 }
