@@ -43,9 +43,6 @@ int main() {
 	read("general-ed/writing", writing);
 
 	string course;	
-	cout << "Usage: deptName XXX\n";
-	cout << "Example: CSE 021\n";
-
 	top:
 	cout << "\nEnter Course: ";
 	getline(cin, course);
