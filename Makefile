@@ -1,11 +1,11 @@
 CC=g++
 
-all: badges
+all: badges.o
 
 clean:
 	clear
-	-rm -f -r badges.out
+	-rm -f -r badges.o
 
-badges: badges.cpp
+badges.o: badges.cpp
 	clear
-	$(CC) -g badges.cpp -o badges.out
+	$(CC) -g badges.cpp -o badges.o
